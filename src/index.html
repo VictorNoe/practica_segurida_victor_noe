@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    /* Estilos para las celdas de la matriz */
+    .cell {
+      width: 30px;
+      height: 30px;
+      border: 1px solid #ccc;
+      display: inline-block;
+      margin: 2px;
+    }
+  </style>
+  <title>Matriz Random con Formulario</title>
+</head>
+<body>
+
+<form id="matrixForm">
+  <label for="rows">Número de filas:</label>
+  <input type="number" id="rows" name="rows" min="1" required>
+
+  <label for="cols">Número de columnas:</label>
+  <input type="number" id="cols" name="cols" min="1" required>
+
+  <label for="interval">Intervalo de cambio (segundos):</label>
+  <input type="number" id="interval" name="interval" min="1" required>
+
+  <button type="button" onclick="startMatrix()">Crear Matriz</button>
+</form>
+
+<div id="matrixContainer"></div>
+
+<script src="./index.js"></script>
+
+</body>
+</html>
